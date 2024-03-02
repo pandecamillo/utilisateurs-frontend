@@ -1,0 +1,323 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+.info-message{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size:1.3rem;
+    padding:5px;
+    visibility:hidden;
+}
+
+body{
+    background-color:black;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1{
+    font-size:1.3rem
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+.user-read{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    padding:5px 25px;
+    position:relative;
+    width:100%;
+}
+
+.user-info-read{
+    padding:20px 0px;
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+
+.user-info-read>p>span{
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+.user-profile-read{
+    min-width:100%;
+    max-width:100%;
+    min-height:250px;
+    max-height:250px;
+    border:3px white solid;
+}
+
+.app-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+    max-width:600px;
+    position:relative;
+}
+
+.user-list-container{
+    width:100%;
+    overflow-y: auto;
+    margin-bottom:25%;
+}
+
+.user-container{
+    display:flex;
+    align-items: center;
+    padding:12px 10px;
+    border:1px white solid;
+    gap:5%;
+}
+
+.user-container:hover{
+    background-color:rgb(50, 50, 50);
+    cursor:pointer;
+}
+
+.user-info{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.user-info-phone{
+    font-size:0.9rem !important;
+    color:rgb(160, 160, 160);
+}
+
+.user-info-name{
+    font-size:1.2rem !important;
+}
+
+.user-controls{
+    display:flex;
+    align-items: center;
+    padding:20px 25px;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    max-width:600px;
+
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:15px;
+    width:100%;
+    max-width:600px;
+    position:relative;
+    padding:0px 8%;
+}
+
+.user-user{
+    padding:25px;
+}
+
+.user-user>h1{
+   font-size:2rem !important;
+}
+
+.phone-input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    width:100%;
+}
+
+.phone-input>label{
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+.phone-input>input{
+    width:100%;
+}
+
+.form>input{
+    font-size:1.2rem;
+    font-weight:bold;
+    color:black;
+    width:100%;
+    padding:5px;
+}
+
+input{
+    font-size:1.2rem;
+    font-weight:bold;
+    color:black;
+}
+
+.user-profile{
+    min-width:70px;
+    min-height:70px;
+    max-width:70px;
+    max-height:70px;
+    border:3px white solid;
+    border-radius:49%; 
+}
+
+.user-info>p{
+    font-size:1.6rem;
+}
+
+.user-profile-input{
+    position:relative;
+}
+
+.user-profile-input > .user-profile{
+    min-width:220px;
+    min-height:200px;
+    max-width:220px;
+    max-height:200px;
+}
+
+.btn-camera{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    border-radius:50%;
+    width:30%;
+    border:4px black solid;
+}
+
+.btn-add-user{
+    font-size:1.8rem;
+    font-weight: bolder;
+    border-radius:12px;
+    display: flex;
+    align-items:center;
+    padding:7px;
+    gap:3px;
+    margin-top:20px;
+}
+
+.btn-add-new-user{
+    font-size:1.8rem;
+    font-weight: bolder;
+    border-radius:12px;
+    display: flex;
+    align-items:center;
+    padding:5px 10px;
+    gap:3px;
+}
+
+.btn-whatsapp{
+    font-weight: bolder;
+    border-radius:17px;
+    display: flex;
+    align-items:center;
+    background-color: black;
+    border: 2px white solid;
+    color:white;
+    gap:3px;
+}
+
+
+.my-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:15px 15px;
+    width:100%;
+    border-bottom:5px solid white;
+    position:sticky;
+    top:0;
+    background-color: black;
+    margin-bottom:5%;
+}
+
+.my-header-user{
+    display:flex;
+    align-items: center;
+    padding:15px 15px;
+    gap:5%;
+    width:100%;
+    border-bottom:5px solid white;
+    position:sticky;
+    top:0;
+    background-color: black;
+}
+
+
+.back{
+    color:white;
+    width:8%;
+}
+
+
+.my-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 12px;
+    width:100%;
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+    background-color: black; 
+    position:fixed;
+    bottom:0;
+    max-width:600px;
+}
+
+.app-message{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+@media (max-width: 375px) {
+    .my-footer{
+        display:flex;
+        justify-content:center;
+    }
+    .my-footer>small{
+        display:none;
+    }
+    .user-info>p{
+        font-size:1.3rem;
+    }
+    h1{
+        font-size:1rem;
+    }
+
+  }
+
+/*nom prenom promotion telephone sexe etc... bienvenue*/
